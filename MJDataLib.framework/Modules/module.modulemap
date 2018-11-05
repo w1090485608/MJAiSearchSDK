@@ -1,0 +1,6 @@
+framework module MJDataLib {
+  umbrella header "MJDataLib.h"
+
+  export *
+  module * { export * }
+}

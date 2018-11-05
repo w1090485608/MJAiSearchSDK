@@ -1,0 +1,22 @@
+{
+  "name": "MJAiSearchSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MJAiSearchSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/袁兴杨/MJAiSearchSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "袁兴杨": "xingyang.yuan@dataenlighten.com"
+  },
+  "source": {
+    "git": "https://github.com/袁兴杨/MJAiSearchSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MJAiSearchSDK/Classes/**/*"
+}
