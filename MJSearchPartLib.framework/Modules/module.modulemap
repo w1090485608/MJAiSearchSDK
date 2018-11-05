@@ -1,0 +1,6 @@
+framework module MJSearchPartLib {
+  umbrella header "MJSearchPartLib.h"
+
+  export *
+  module * { export * }
+}

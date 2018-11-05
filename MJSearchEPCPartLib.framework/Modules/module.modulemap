@@ -1,0 +1,6 @@
+framework module MJSearchEPCPartLib {
+  umbrella header "MJSearchEPCPartLib.h"
+
+  export *
+  module * { export * }
+}
