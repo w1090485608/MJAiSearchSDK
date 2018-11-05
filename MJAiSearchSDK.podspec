@@ -32,13 +32,13 @@ TODO: Add long description of the pod here.
 
 # s.source_files = 'MJAiSearchSDK/Classes/**/*'
   
-s.resource_bundles = {
-  'MJAiSearchSDK' => ['MJResources.bundle']
-}
+#s.resource_bundles = {
+# 'MJAiSearchSDK' => ['MJResources.bundle']
+#}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 s.dependency 'Masonry'
-s.ios.vendored_frameworks = MJDataLib.framework,MJVinParseLib.framework,MJAreaSearchPartLib.framework,MJSearchPartLib.framework,MJSearchEPCPartLib.framework
+s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework'
 
 end
