@@ -1,0 +1,6 @@
+framework module MJAreaSearchPartLib {
+  umbrella header "MJAreaSearchPartLib.h"
+
+  export *
+  module * { export * }
+}

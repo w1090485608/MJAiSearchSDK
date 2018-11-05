@@ -1,0 +1,20 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJAiSearchSDK (1.1.0):
+    - Masonry
+
+DEPENDENCIES:
+  - MJAiSearchSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - MJAiSearchSDK
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJAiSearchSDK: f5b02678bf3a50c9027464ecac9ec7bd30b1b9e4
+
+PODFILE CHECKSUM: cc07186ec828d5318cea8ebfb31c8dfd8940b649
+
+COCOAPODS: 1.6.0.beta.2

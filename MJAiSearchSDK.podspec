@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJAiSearchSDK'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = '明觉爱查询SDK'
 
 # This description is used to generate tags and improve search results.
@@ -32,8 +32,7 @@ TODO: Add long description of the pod here.
 
 # s.source_files = 'MJAiSearchSDK/Classes/**/*'
   
-#s.resource_bundles = {
-# 'MJAiSearchSDK' => ['MJResources.bundle']
+s.resource = 'MJResources.bundle'
 #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
