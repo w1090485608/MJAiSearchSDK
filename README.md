@@ -17,7 +17,11 @@ MJAiSearchSDK is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
+platform:ios, '9.0'  # 仅支持iOS9.0及以上设备
+use_frameworks!
+target 'TargetName' do
 pod 'MJAiSearchSDK'
+end
 ```
 
 ## 教程
@@ -45,9 +49,7 @@ pod 'MJAiSearchSDK'
 
 ----------
 ## SDK集成步骤
-1. 将需要使用到的SDK模块复制到项目内。
-2. 将我司提供的mjlicens e.lic文件导入到项目内。
-3. 如果需要使用小汽车圈选SDK，则需要同时将MJResource.bundle导入到项目内。
+1. 使用cocoapod继承SDK
 4. 初始化SDK
 
 ``` objectivec
