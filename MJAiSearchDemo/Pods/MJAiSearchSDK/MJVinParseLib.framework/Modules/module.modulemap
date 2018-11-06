@@ -1,0 +1,6 @@
+framework module MJVinParseLib {
+  umbrella header "MJVinParseLib.h"
+
+  export *
+  module * { export * }
+}
