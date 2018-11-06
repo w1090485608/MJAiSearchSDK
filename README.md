@@ -28,7 +28,7 @@ end
 ## 教程
 ---
 
-#### V1.1 更新内容
+#### V1.1.2 更新内容
 
 1. 提供语义查询配件服务
 2. 提供定损服务
@@ -36,7 +36,7 @@ end
 ## SDK简述
 本SDK开发旨在提供方便快捷地获取汽车配件信息，通过VIN码或汽车品牌配置信息进行车辆定型后即可使用圈选或者配件名、OE等形式获取配件信息。 
 
-商务合作请联系[明觉科技](http://www.dataenlighten.com)，本SDK仅提供合作客户使用，违用必究!
+本SDK使用时需要获取license。商务合作请联系[明觉科技](http://www.dataenlighten.com)，SDK仅提供合作客户使用，违用必究!
 
 
 ----------
@@ -56,7 +56,7 @@ end
 ``` objectivec
 [[MJDamageAssessmentManager sharedInstance] configureWithUserInfo:userInfo complete:^(BOOL success) {}];
 ```
-5. 愉快使用SDK其他功能。
+3. 愉快使用SDK其他功能。
 
 
 ----------
@@ -131,7 +131,7 @@ draw.delegate = self;
 上面方法将MJDrawCircleSearchPartController中的view添加到您自己的viewcontroller中，方便使用，在添加代理之后，圈选得到的配件会在代理方法中返回，代理方法如下:
 
 ``` objectivec
-- (void)canvasCircleSelectedPartsCompletion:(NSArray<NSDictionary *> *)parts;
+- (void)canvasCircleSelectedPartsCompletion:(NSArray<MJPart *> *)parts;
 ```
 当然，我们在请求开始以及结束的时候也提供了代理方法:
 
@@ -159,19 +159,33 @@ draw.delegate = self;
 
 
 ----------
-#### 2.搜索配件接口-传入配件名以及搜索渠道(语音，手动输入，首字母)即可搜索配件。
+#### 2.搜索配件接口-传入需要搜索的关键字：可以是配件名也可以是OE号，可以是多个配件名加上工项（更换，维修，喷漆，钣金，拆装。。。）以及搜索渠道(语音，手动输入，首字母)即可搜索配件。
 该接口提供语义定损服务，返回数据不仅包含配件数据，也将包含用户输入的语义工项
+返回的数据是MJPart的对象
 
 ``` objectivec
-+ (void)searchPartWithName:(nonnull NSString*)name query:(MJSearchQurey)query completion:(_Nullable ServiceResponseBlock)completion;
++ (void)searchPartWithKey:(nonnull NSString*)key query:(MJSearchQurey)query completion:(_Nullable ServiceResponseBlock)completion;
 ```
+##### 示例
+``` objectivec
+    [MJSearchPartService searchPartWithKey:@"换前保险杠皮拆左前大灯壳右前大灯维修前盖更换发动机" query:(MJSearchQureyManuel) completion:^(id  _Nullable response, BOOL success, NSError * _Nullable error) {
+        
+    }];
+```
+
 ----------
 #### 3.二次推荐配件-每次搜索最多提供7个配件信息，当用户需要更多配件时，推荐调用此方法获得更多配件推荐。
-
+该方法提供二次推荐：上拉加载更多配件
 ``` objectivec
 + (void)researchPartCompletion:(_Nullable ServiceResponseBlock)completion;
 ```
 
+#### 3.1. 精准二次推荐配件 - 传入用户已选的配件来获取更加精准的二次推荐配件。
+该方法提供二次推荐：上拉加载更多配件
+
+``` objectivec
++ (void)researchPartWithSelectedParts:( NSArray<MJPart *> * _Nullable )parts Completion:(_Nullable ServiceResponseBlock)completion;
+```
 
 ----------
 #### 4.获取配件图片
@@ -180,6 +194,10 @@ draw.delegate = self;
 completion:(_Nullable ServiceResponseBlock)completion;
 ```
 
+#### 4.1.根据MJPart获取配件图片
+``` objectivec
++ (void)requestImageWithPart:(nonnull MJPart*)part completion:(_Nullable ServiceResponseBlock)completion;
+```
 
 ----------
 #### 5.获取EPC图片
@@ -188,18 +206,32 @@ completion:(_Nullable ServiceResponseBlock)completion;
 + (void)requestImageWithImageName:(nonnull NSString *)imageName imagepath:(nonnull NSString *)imagepath
 completion:(_Nullable ServiceResponseBlock)completion;
 ```
+
+#### 5.1.根据MJPart获取EPC图片
+
+``` objectivec
++ (void)requestEpcImageWithPart:(nonnull MJPart*)part
+                       completion:(_Nullable ServiceResponseBlock)completion;
+```
 ----------
 
 
 ### 四、MJSearchEPCPartLib.framework -- 周围配件搜索服务
-#### 根据OE号 EPC图片名和图片路径查询相邻配件:
+#### 1.根据OE号 EPC图片名和图片路径查询相邻配件:
 
 ``` objectivec
 + (void)searchRelatedPartsWithImageName:(nonnull NSString *)imageName imagepath: (nonnull NSString *)imagePath oeNumber:(nonnull NSString *)oeNumber completion: (_Nullable ServiceResponseBlock)completion;
 ```
 
+#### 1.1.根据MJPart查询相邻配件
+
+``` objectivec
++ (void)searchRelatedPartsWithPart:(nonnull MJPart *)part
+                             completion:(_Nullable ServiceResponseBlock)completion;
+```
+
 ### 五、MJOrderServiceLib.framework -- 定损服务
-#### 提供定损接口，传入用户已选择的配件信息，返回相应的估价单，其中包含配件的工项价格和配件关联关系
+#### 1.提供定损接口，传入用户已选择的配件信息，返回相应的估价单，其中包含配件的工项价格和配件关联关系
 
 ``` objectivec
 + (void)assessmentWithParts:(nonnull NSArray *)parts  completion: (_Nullable ServiceResponseBlock)completion;
@@ -219,7 +251,7 @@ completion:(_Nullable ServiceResponseBlock)completion;
 | 50006     | 请至少先进行圈选或者搜索 |
 | 50009     | 请求出错                 |
 | 50010     | 没有配件                 |
-
+| 90001     | 传入非法的MJPart          |
 ## Author
 
 袁兴杨, xingyang.yuan@dataenlighten.com
