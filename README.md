@@ -23,6 +23,7 @@ target 'TargetName' do
 pod 'MJAiSearchSDK'
 end
 ```
+如果搜索不到，请运行``` pod repo update --verbose ```更新cocoapod仓库。
 
 ## 教程
 ---
@@ -50,7 +51,7 @@ end
 ----------
 ## SDK集成步骤
 1. 使用cocoapod继承SDK
-4. 初始化SDK
+4. 初始化SDK。userinfo格式请参考Demo工程。
 
 ``` objectivec
 [[MJDamageAssessmentManager sharedInstance] configureWithUserInfo:userInfo complete:^(BOOL success) {}];
