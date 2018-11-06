@@ -236,6 +236,33 @@ completion:(_Nullable ServiceResponseBlock)completion;
 ``` objectivec
 + (void)assessmentWithParts:(nonnull NSArray *)parts  completion: (_Nullable ServiceResponseBlock)completion;
 ```
+注意事项：
+传入的MJPart需要设定工项为YES：
+
+| 字段 | 描述                |
+| --------- | ------------------------ |
+| replaceStatus      | 更换状态,是否更换           |
+| paintStatus     | 喷漆状态，是否喷漆          |
+| fitStatus     | 拆卸状态，是否拆卸                |
+| panelStatus     | 维修状态，是否维修，注意维修状态需要同时设置damageDegree，可选值为：轻度、中度、重度  ，默认中度   |
+| auxiliaryStatus     | 维修状态，是否辅料                 |
+| outRepairStatus     | 维修状态，是否外修               |
+| electroMechanicalStatus     | 维修状态，是否机电 |
+| accessoryStatus     | 拆装附件状态，是否拆装附件     |
+
+##### 返回为字典数组
+其中estimateChooseList为已选配件的工时工项信息，estimateOtherList为推荐的工项工时信息，字典详细解释如下
+
+| key | 解释                |
+| --------- | ------------------------ |
+| chooseList      | 已选工项         |
+| deleteList     |  推荐剔除工项          |
+| partId     | 配件ID                |
+| partName     | 配件名称     |
+| recommendList     | 推荐选择工项              |
+| labor     |  工时金额           |
+| option     | 工项 |
+
 
 ----------
 ## 错误码介绍
