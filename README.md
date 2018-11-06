@@ -22,9 +22,6 @@ pod 'MJAiSearchSDK'
 
 ## 教程
 ---
-title: AI查询-iOS开发文档
-tags: 汽车,配件,定损
----
 
 #### V1.1 更新内容
 
