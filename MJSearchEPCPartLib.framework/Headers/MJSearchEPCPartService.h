@@ -30,7 +30,7 @@
 
 
 /**
- 根据OE号 EPC图片名和图片路径查询相邻配件
+ 根据MJPart查询相邻配件
  @param part 配件
  @param completion 返回参数
  */

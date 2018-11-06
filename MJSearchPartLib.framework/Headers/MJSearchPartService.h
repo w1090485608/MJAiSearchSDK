@@ -57,13 +57,28 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
 + (void)researchPartCompletion:(_Nullable ServiceResponseBlock)completion;
 
 /**
+ 精准二次推荐配件 - 传入用户已选的配件来获取更加精准的二次推荐配件
+ @param parts 用户已选择的配件
+ @param completion 二次搜索到的配件列表
+ */
++ (void)researchPartWithSelectedParts:( NSArray<MJPart *> * _Nullable )parts Completion:(_Nullable ServiceResponseBlock)completion;
+
+/**
  获取配件图片
 
  @param imageName 图片名
- @param completion 获取图片完
+ @param completion 获取图片完成的结果
  */
 + (void)requestImageWithImageName:(nonnull NSString *)imageName
                       completion:(_Nullable ServiceResponseBlock)completion;
+
+/**
+ 根据MJPart获取配件图片
+ 
+ @param part 配件
+ @param completion 获取图片完成的结果
+ */
++ (void)requestImageWithPart:(nonnull MJPart*)part completion:(_Nullable ServiceResponseBlock)completion;
 
 /**
   获取EPC图片
@@ -74,6 +89,15 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
  */
 + (void)requestImageWithImageName:(nonnull NSString *)imageName
                         imagepath:(nonnull NSString *)imagepath
+                       completion:(_Nullable ServiceResponseBlock)completion;
+
+/**
+ 根据MJPart获取EPC图片
+ 
+ @param part 配件
+ @param completion 获取图片完成
+ */
++ (void)requestEpcImageWithPart:(nonnull MJPart*)part
                        completion:(_Nullable ServiceResponseBlock)completion;
 
 @end

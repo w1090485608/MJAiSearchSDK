@@ -1,0 +1,6 @@
+framework module MJOrderServiceLib {
+  umbrella header "MJOrderServiceLib.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,8 @@
 
 #import "MJOemNumber.h"
 
+
+
 @interface MJPart : NSObject<NSCopying>
 
 @property (nonatomic,copy) NSString *presetAreaID;
@@ -21,6 +23,7 @@
 @property (nonatomic,copy) NSString *partPrice;             //配件价格
 @property (nonatomic,copy) NSString *image_address_suffix;  //图片地址后缀
 @property (nonatomic,copy) NSString *imageName;             //图片名称
+@property (nonatomic,copy) NSString *thumbnailImage;        //配件缩略图
 
 @property (nonatomic , strong) NSMutableArray* moreOEParts; //存放多OE配件
 
@@ -40,15 +43,16 @@
 @property (nonatomic,assign) BOOL paintStatus;          //喷漆状态，是否喷漆
 @property (nonatomic,assign) BOOL fitStatus;            //拆卸状态，是否拆卸
 @property (nonatomic,assign) BOOL panelStatus;            //维修状态，是否维修
-
+@property (nonatomic,assign) BOOL auxiliaryStatus;                 //维修状态，是否辅料
+@property (nonatomic,assign) BOOL outRepairStatus;           //维修状态，是否外修
 @property (nonatomic,assign) BOOL electroMechanicalStatus;            //维修状态，是否机电
 @property (nonatomic,copy) NSNumber* electroMechanicalPrice;            //机电价格
-@property (nonatomic,assign) BOOL auxiliaryStatus;                 //维修状态，是否辅料
-@property (nonatomic,assign) BOOL repair_outsideStatus;            //维修状态，是否外修
+@property (nonatomic,assign) BOOL accessoryStatus;          //拆装附件状态，是否拆装附件
+
 
 @property (nonatomic,assign) double panelPrice;     //钣金价格
 
-@property (nonatomic , assign) BOOL outRepairStatus;
+
 @property (nonatomic , copy) NSString* ExternalRepairer;//外修公司
 @property (nonatomic , copy) NSString* ExternalInstructions; //外修备注
 
