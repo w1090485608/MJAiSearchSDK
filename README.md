@@ -42,8 +42,10 @@ end
 ### 为方便用户使用SDK，根据自身需求选用功能模块，我们将其拆分成五大模块:
 1. MJVinParseLib.framework -- VIN定型服务模块，提供VIN定型相关功能，原则上推荐所有用户选用。
 2. MJAreaSearchPartLib.framework -- 圈选小汽车得到相应区域配件信息，推荐所有用户使用。
-3. MJSearchPartLib.framework -- 配件搜索服务模块，提供配件名、配件OE搜索配件，推荐所有用户使用。 4. MJSearchEPCPartLib.framework -- EPC图选服务模块，提供查询周围配件功能。
-5. MJDataLib.framework -- 基础通讯模块，原则上必须接入。
+3. MJSearchPartLib.framework -- 配件搜索服务模块，提供配件名、配件OE搜索配件，推荐所有用户使用。 
+4. MJSearchEPCPartLib.framework -- EPC图选服务模块，提供查询周围配件功能。
+5. MJOrderServiceLib.framework -- 定损推荐服务，提供定损工时和推荐工时服务。
+6. MJDataLib.framework -- 基础通讯模块，原则上必须接入。
 
 
 ----------
