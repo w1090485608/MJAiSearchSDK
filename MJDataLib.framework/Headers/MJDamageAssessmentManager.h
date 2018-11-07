@@ -6,7 +6,7 @@
 //  Copyright © 2017 Data Enlighten. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "MJVehicle.h"
+#import <MJDataLib/MJVehicle.h>
 
 
 @interface MJDamageAssessmentManager : NSObject
