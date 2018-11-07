@@ -36,7 +36,8 @@ s.resource = 'MJResources.bundle'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
 
-s.dependency 'Masonry','AFNetworking'
+s.dependency 'Masonry'
+s.dependency 'AFNetworking','~>3.1.0'
 s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework','MJOrderServiceLib.framework'
 
 end
