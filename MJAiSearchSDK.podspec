@@ -39,5 +39,5 @@ s.resource = 'MJResources.bundle'
 s.dependency 'Masonry'
 s.dependency 'AFNetworking','~>3.1.0'
 s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework','MJOrderServiceLib.framework'
-s.libraries = 'stdc++.6.0.9'
+
 end
