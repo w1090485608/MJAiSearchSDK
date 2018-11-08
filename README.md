@@ -26,10 +26,8 @@ end
 ## 教程
 ---
 
-#### V1.1.2 更新内容
-
-1. 提供语义查询配件服务
-2. 提供定损服务
+## V1.1.4 更新内容
+移除圈选页面的切换车体按钮和文字label
 
 ## SDK简述
 本SDK开发旨在提供方便快捷地获取汽车配件信息，通过VIN码或汽车品牌配置信息进行车辆定型后即可使用圈选或者配件名、OE等形式获取配件信息。 
@@ -147,6 +145,13 @@ draw.delegate = self;
 
 ```
 
+在需要查询底盘件的时候我们还提供了切换车体的方法，其中mode有两个值：
+MJDrawModeBody  //车身件
+MJDrawModeChassis  //底盘件
+方法如下：
+``` objectivec
+- (void)switchDrawSearchModeWithMode:(MJDrawMode)mode;
+```
 
 ----------
 ### 三、MJSearchPartLib.framework -- 配件搜索服务
