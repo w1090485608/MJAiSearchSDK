@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MJDataLib/MJPart.h>
+
+typedef NS_ENUM(NSInteger, MJDrawMode) {
+    MJDrawModeBody, //车身件
+    MJDrawModeChassis  //底盘件
+};
+
 @protocol MJCanvasCircleSelectedPartProtocol <NSObject>
 
 @optional
@@ -35,5 +41,14 @@
 @interface MJDrawCircleSearchPartController : UIViewController
 
 @property (nonatomic,weak) id<MJCanvasCircleSelectedPartProtocol>delegate;
+
+
+/**
+ 圈选模式选择
+ 
+ @param mode 圈选模式：MJDrawModeBody  //车身件
+                     MJDrawModeChassis  //底盘件
+ */
+- (void)switchDrawSearchModeWithMode:(MJDrawMode)mode;
 
 @end
