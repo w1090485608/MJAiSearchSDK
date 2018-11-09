@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		217BEA93219091C300622C68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BEA92219091C300622C68 /* AppDelegate.m */; };
-		217BEA96219091C300622C68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BEA95219091C300622C68 /* ViewController.m */; };
 		217BEA99219091C300622C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217BEA97219091C300622C68 /* Main.storyboard */; };
 		217BEA9B219091C400622C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217BEA9A219091C400622C68 /* Assets.xcassets */; };
 		217BEA9E219091C400622C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217BEA9C219091C400622C68 /* LaunchScreen.storyboard */; };
 		217BEAA1219091C400622C68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BEAA0219091C400622C68 /* main.m */; };
+		274001A021951905000343DB /* mj_license.lic in Resources */ = {isa = PBXBuildFile; fileRef = 2740019F21951905000343DB /* mj_license.lic */; };
+		274001A3219519DD000343DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274001A1219519DD000343DB /* ViewController.m */; };
+		274C373E2194408700F81469 /* EPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C37362194408600F81469 /* EPCViewController.m */; };
+		274C37412194408700F81469 /* DrawCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C373A2194408700F81469 /* DrawCircleController.m */; };
 		A209E98B4DAAABD4D23066AD /* Pods_MJAiSearchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1DBC96CE096A506C418B1 /* Pods_MJAiSearchDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,13 +23,18 @@
 		217BEA8E219091C300622C68 /* MJAiSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJAiSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217BEA91219091C300622C68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		217BEA92219091C300622C68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		217BEA94219091C300622C68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		217BEA95219091C300622C68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		217BEA98219091C300622C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		217BEA9A219091C400622C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		217BEA9D219091C400622C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		217BEA9F219091C400622C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		217BEAA0219091C400622C68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2740019F21951905000343DB /* mj_license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mj_license.lic; sourceTree = "<group>"; };
+		274001A1219519DD000343DB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		274001A2219519DD000343DB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		274C37362194408600F81469 /* EPCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCViewController.m; sourceTree = "<group>"; };
+		274C373A2194408700F81469 /* DrawCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircleController.m; sourceTree = "<group>"; };
+		274C373B2194408700F81469 /* EPCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCViewController.h; sourceTree = "<group>"; };
+		274C373D2194408700F81469 /* DrawCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircleController.h; sourceTree = "<group>"; };
 		6E546D86020370221486EE6D /* Pods-MJAiSearchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchDemo.debug.xcconfig"; path = "Target Support Files/Pods-MJAiSearchDemo/Pods-MJAiSearchDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D8F273EE3168F3AFB94ABFC8 /* Pods-MJAiSearchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchDemo.release.xcconfig"; path = "Target Support Files/Pods-MJAiSearchDemo/Pods-MJAiSearchDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DAB1DBC96CE096A506C418B1 /* Pods_MJAiSearchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJAiSearchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +55,7 @@
 		217BEA85219091C300622C68 = {
 			isa = PBXGroup;
 			children = (
+				2740019F21951905000343DB /* mj_license.lic */,
 				217BEA90219091C300622C68 /* MJAiSearchDemo */,
 				217BEA8F219091C300622C68 /* Products */,
 				434191C6DCD5C79C373FC6F4 /* Pods */,
@@ -65,10 +74,14 @@
 		217BEA90219091C300622C68 /* MJAiSearchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				274001A2219519DD000343DB /* ViewController.h */,
+				274001A1219519DD000343DB /* ViewController.m */,
+				274C373D2194408700F81469 /* DrawCircleController.h */,
+				274C373A2194408700F81469 /* DrawCircleController.m */,
+				274C373B2194408700F81469 /* EPCViewController.h */,
+				274C37362194408600F81469 /* EPCViewController.m */,
 				217BEA91219091C300622C68 /* AppDelegate.h */,
 				217BEA92219091C300622C68 /* AppDelegate.m */,
-				217BEA94219091C300622C68 /* ViewController.h */,
-				217BEA95219091C300622C68 /* ViewController.m */,
 				217BEA97219091C300622C68 /* Main.storyboard */,
 				217BEA9A219091C400622C68 /* Assets.xcassets */,
 				217BEA9C219091C400622C68 /* LaunchScreen.storyboard */,
@@ -156,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				217BEA9E219091C400622C68 /* LaunchScreen.storyboard in Resources */,
+				274001A021951905000343DB /* mj_license.lic in Resources */,
 				217BEA9B219091C400622C68 /* Assets.xcassets in Resources */,
 				217BEA99219091C300622C68 /* Main.storyboard in Resources */,
 			);
@@ -173,22 +187,28 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MJAiSearchDemo/Pods-MJAiSearchDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${PODS_ROOT}/MJAiSearchSDK/MJDataLib.framework",
 				"${PODS_ROOT}/MJAiSearchSDK/MJVinParseLib.framework",
 				"${PODS_ROOT}/MJAiSearchSDK/MJAreaSearchPartLib.framework",
 				"${PODS_ROOT}/MJAiSearchSDK/MJSearchPartLib.framework",
 				"${PODS_ROOT}/MJAiSearchSDK/MJSearchEPCPartLib.framework",
+				"${PODS_ROOT}/MJAiSearchSDK/MJOrderServiceLib.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJDataLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJVinParseLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJAreaSearchPartLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJSearchPartLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJSearchEPCPartLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJOrderServiceLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217BEA96219091C300622C68 /* ViewController.m in Sources */,
+				274001A3219519DD000343DB /* ViewController.m in Sources */,
+				274C373E2194408700F81469 /* EPCViewController.m in Sources */,
+				274C37412194408700F81469 /* DrawCircleController.m in Sources */,
 				217BEAA1219091C400622C68 /* main.m in Sources */,
 				217BEA93219091C300622C68 /* AppDelegate.m in Sources */,
 			);
@@ -400,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingjue.AssessDamage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hangzhou.ksp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -419,7 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingjue.AssessDamage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hangzhou.ksp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

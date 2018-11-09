@@ -4,4 +4,5 @@ platform:ios, '9.0'
 use_frameworks!
 target 'MJAiSearchDemo' do
 pod 'MJAiSearchSDK'
+pod 'MJRefresh'
 end

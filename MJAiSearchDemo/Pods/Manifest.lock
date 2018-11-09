@@ -1,20 +1,42 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-  - MJAiSearchSDK (1.1.1):
+  - MJAiSearchSDK (1.1.4):
+    - AFNetworking (~> 3.1.0)
     - Masonry
+  - MJRefresh (3.1.15.7)
 
 DEPENDENCIES:
   - MJAiSearchSDK
+  - MJRefresh
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - Masonry
     - MJAiSearchSDK
+    - MJRefresh
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJAiSearchSDK: 0470f98fb97a4df053a6a3e61ebc7d8c8cd8558f
+  MJAiSearchSDK: cf725aa6c700f9cebbc2b865d0d10813e6ffc980
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
 
-PODFILE CHECKSUM: f809e94d96cefd2df01113ff4ddaca9d606d5cdd
+PODFILE CHECKSUM: 418821b56afe76d77575b2b3fdd083ebb1c64b1f
 
 COCOAPODS: 1.6.0.beta.2
