@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-  - MJAiSearchSDK (1.1.4):
+  - MJAiSearchSDK (1.1.5):
     - AFNetworking (~> 3.1.0)
     - Masonry
   - MJRefresh (3.1.15.7)
@@ -34,7 +34,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJAiSearchSDK: cf725aa6c700f9cebbc2b865d0d10813e6ffc980
+  MJAiSearchSDK: 28b7ae6b1240ef5eb2e16d0ee9bb4ed86f7da535
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
 
 PODFILE CHECKSUM: 418821b56afe76d77575b2b3fdd083ebb1c64b1f

@@ -38,15 +38,16 @@
                                @"app_user_name"             :   @"APP测试账号",
                                @"app_user_contact"          :   @"18520883027",
                                };
-    [[MJDamageAssessmentManager sharedInstance] configureWithUserInfo:nil
-                                                       complete:^(BOOL success) {
-
-                                                           if (success) {
-                                                       
-                                                               
-                                                           }
-                                                           
+    [[MJDamageAssessmentManager sharedInstance] configureWithUserInfo:nil licensePath:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"MJResources" ofType:@"bundle"]]URLForResource:@"mj_license" withExtension:@"lic"]  complete:^(BOOL success) {
+        
+        if (success) {
+            [self VINPrase];
+            
+        }
+        
     }];
+    
+    
     [self configUI];
     
 }

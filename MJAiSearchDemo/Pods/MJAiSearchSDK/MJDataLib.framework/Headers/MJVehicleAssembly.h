@@ -33,5 +33,6 @@
 @property (nonatomic,copy)      NSString *modelNameEng;
 @property (nonatomic,copy)      NSString *brandClass;
 @property (nonatomic,copy)      NSString *maker;   //制造商
+@property (nonatomic,copy)      NSString *prefix;    
 
 @end

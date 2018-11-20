@@ -70,7 +70,7 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
  @param completion 获取图片完成的结果
  */
 + (void)requestImageWithImageName:(nonnull NSString *)imageName
-                      completion:(_Nullable ServiceResponseBlock)completion;
+                      completion:(_Nullable ServiceResponseBlock)completion DEPRECATED_MSG_ATTRIBUTE("该方法即将弃用，返回的MJPart中已经包含了配件缩略图的URL");
 
 /**
  根据MJPart获取配件图片
@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
  @param part 配件
  @param completion 获取图片完成的结果
  */
-+ (void)requestImageWithPart:(nonnull MJPart*)part completion:(_Nullable ServiceResponseBlock)completion;
++ (void)requestImageWithPart:(nonnull MJPart*)part completion:(_Nullable ServiceResponseBlock)completion DEPRECATED_MSG_ATTRIBUTE("该方法即将弃用，返回的MJPart中已经包含了配件缩略图的URL");
 
 /**
   获取EPC图片
@@ -89,7 +89,7 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
  */
 + (void)requestImageWithImageName:(nonnull NSString *)imageName
                         imagepath:(nonnull NSString *)imagepath
-                       completion:(_Nullable ServiceResponseBlock)completion;
+                       completion:(_Nullable ServiceResponseBlock)completion DEPRECATED_MSG_ATTRIBUTE("该方法即将弃用，请使用requestEpcImageWithPart获取配件EPC图片");
 
 /**
  根据MJPart获取EPC图片
