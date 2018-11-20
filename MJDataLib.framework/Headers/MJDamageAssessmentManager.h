@@ -34,21 +34,26 @@
 + (MJDamageAssessmentManager *_Nonnull)sharedInstance;
 
 /**
- 初始化SDK 校验权限是否有效
+ 初始化SDK 校验权限是否有效 默认证书路径在mainBundle
  
  @param userInfo 用户信息
  @param completed 校验结果
  */
-- (void)configureWithUserInfo:(nullable NSDictionary *)userInfo complete:(nullable void(^)(BOOL))completed;
+- (void)configureWithUserInfo:(nullable NSDictionary *)userInfo complete:(nullable void(^)(BOOL))completed DEPRECATED_MSG_ATTRIBUTE("该方法即将弃用，请使用自定义证书路径的方法");
 
-
+/**
+ 初始化SDK 校验权限是否有效 可以自定义证书路径
+ 
+ @param userInfo 用户信息
+ @param licensePath 证书路径
+ @param completed 校验结果
+ */
+- (void)configureWithUserInfo:(nullable NSDictionary *)userInfo licensePath:(nullable NSURL*)licensePath complete:(nullable void(^)(BOOL))completed;
 
 /**
 清空SDK内部数据
  */
 - (void)clearSDKsData;
-
-
 
 @end
 

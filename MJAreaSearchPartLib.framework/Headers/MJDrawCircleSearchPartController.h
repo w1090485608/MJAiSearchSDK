@@ -42,6 +42,54 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
 
 @property (nonatomic,weak) id<MJCanvasCircleSelectedPartProtocol>delegate;
 
+/**
+设置汽车图片的上下偏移量
+ carTopOffset   顶部偏移，默认0
+ carBottomOffset   底部偏移,默认0，通常设置负值
+ */
+@property (nonatomic , assign) CGFloat carTopOffset;
+@property (nonatomic , assign) CGFloat carBottomOffset;
+
+
+/**
+ 三厢四门车体图片
+ */
+@property (nonatomic , strong) UIImage* sxsmBodyImage;
+
+/**
+ 三厢四门底盘图片
+ */
+@property (nonatomic , strong) UIImage* sxsmChassisImage;
+
+/**
+ 两厢五门车体图片
+ */
+@property (nonatomic , strong) UIImage* lxwmBodyImage;
+
+/**
+ 两厢五门底盘图片
+ */
+@property (nonatomic , strong) UIImage* lxwmChassisImage;
+
+/**
+ SUV车体图片
+ */
+@property (nonatomic , strong) UIImage* suvBodyImage;
+
+/**
+ SUV底盘图片
+ */
+@property (nonatomic , strong) UIImage* suvChassisImage;
+
+/**
+ MPV车体图片
+ */
+@property (nonatomic , strong) UIImage* mpvBodyImage;
+
+/**
+ MPV底盘图片
+ */
+@property (nonatomic , strong) UIImage* mpvChassisImage;
 
 /**
  圈选模式选择

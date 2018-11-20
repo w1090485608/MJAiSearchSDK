@@ -26,6 +26,17 @@ end
 ## 教程
 ---
 
+## V1.1.5 更新内容
+1.可以自定义设置license位置
+示例：
+``` objectivec
+[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"MJResources" ofType:@"bundle"]]URLForResource:@"mj_license" withExtension:@"lic"]
+```
+
+2.可以自定义圈选页面的小汽车图片和小汽车上下位置的offset值
+3.修复bug
+
+
 ## V1.1.4 更新内容
 移除圈选页面的切换车体按钮和文字label
 

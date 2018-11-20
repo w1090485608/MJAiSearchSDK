@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MJOrderService.h</key>
 		<data>
-		Dy/O+iQVHT6ANnhgB3quyN18qaI=
+		/wLMSR9Qvh34wkjE1M7UkhPGUxc=
 		</data>
 		<key>Headers/MJOrderServiceLib.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ffj4L8ZMgmbsoTuhbg6QtaT3J2I=
+		Ul09Uci/eQpilCHONFK2GQSA5qU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dy/O+iQVHT6ANnhgB3quyN18qaI=
+			/wLMSR9Qvh34wkjE1M7UkhPGUxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			oaWQeOoOoSpg9YnubNbgEU0s7qLIsv7OtmHlPji6qXw=
+			hB7c9YjAtHZDfXtImD9UcF0jMLxyONow8RGd30LwI0A=
 			</data>
 		</dict>
 		<key>Headers/MJOrderServiceLib.h</key>

@@ -25,7 +25,7 @@
 @property (nonatomic,copy) NSString *imageName;             //图片名称
 @property (nonatomic,copy) NSString *thumbnailImage;        //配件缩略图
 
-@property (nonatomic , strong) NSMutableArray* moreOEParts; //存放多OE配件
+@property (nonatomic , strong) NSMutableArray* moreOEParts DEPRECATED_MSG_ATTRIBUTE("弃用"); //存放多OE配件
 
 
 @property (nonatomic,copy) NSString *epc_image_address_suffix;             //图片名称
