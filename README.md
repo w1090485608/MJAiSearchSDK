@@ -16,7 +16,6 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 platform:ios, '9.0'  # 仅支持iOS9.0及以上设备
-use_frameworks!
 target 'TargetName' do
 pod 'MJAiSearchSDK'
 end
