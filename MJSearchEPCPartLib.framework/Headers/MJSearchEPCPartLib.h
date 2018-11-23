@@ -6,6 +6,8 @@
 //  Copyright © 2018年 袁兴杨. All rights reserved.
 //
 
+//版本：1.1.9
+
 #import <UIKit/UIKit.h>
 
 //! Project version number for MJSearchEPCPartLib.
