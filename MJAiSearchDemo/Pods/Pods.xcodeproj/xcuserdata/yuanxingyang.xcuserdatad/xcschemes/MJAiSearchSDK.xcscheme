@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62935BD6BC4886106F0FF2891256684F"
+               BlueprintIdentifier = "6673626E46759FD0B4A0346E58A4DF98"
                BlueprintName = "MJAiSearchSDK"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "MJAiSearchSDK">

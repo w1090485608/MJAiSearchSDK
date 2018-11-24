@@ -6,6 +6,8 @@
 //  Copyright © 2018年 袁兴杨. All rights reserved.
 //
 
+//版本：1.1.9
+
 #import <UIKit/UIKit.h>
 
 //! Project version number for MJDataLib.
@@ -18,7 +20,6 @@ FOUNDATION_EXPORT const unsigned char MJDataLibVersionString[];
 
 #import <MJDataLib/MJNetworkInterface.h>
 #import <MJDataLib/MJDamageAssessmentManager.h>
-#import <MJDataLib/NSString+MJAPIString.h>
 #import <MJDataLib/MJVehicle.h>
 #import <MJDataLib/MJVehicleAssembly.h>
 #import <MJDataLib/MJPart.h>

@@ -49,6 +49,8 @@
     [draw didMoveToParentViewController:self];
 }
 
+
+
 - (void)canvasCircleSelectedPartsCompletion:(NSArray<MJPart *> *)parts
 {
     NSLog(@"%@",parts);

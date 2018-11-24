@@ -15,7 +15,7 @@
 		274001A3219519DD000343DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274001A1219519DD000343DB /* ViewController.m */; };
 		274C373E2194408700F81469 /* EPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C37362194408600F81469 /* EPCViewController.m */; };
 		274C37412194408700F81469 /* DrawCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C373A2194408700F81469 /* DrawCircleController.m */; };
-		A209E98B4DAAABD4D23066AD /* Pods_MJAiSearchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1DBC96CE096A506C418B1 /* Pods_MJAiSearchDemo.framework */; };
+		A6470B3546980DC3C71E5083 /* Pods_MJAiSearchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701DA3D2BA310A3254220F8 /* Pods_MJAiSearchDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		274C373B2194408700F81469 /* EPCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCViewController.h; sourceTree = "<group>"; };
 		274C373D2194408700F81469 /* DrawCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircleController.h; sourceTree = "<group>"; };
 		6E546D86020370221486EE6D /* Pods-MJAiSearchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchDemo.debug.xcconfig"; path = "Target Support Files/Pods-MJAiSearchDemo/Pods-MJAiSearchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8701DA3D2BA310A3254220F8 /* Pods_MJAiSearchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJAiSearchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F273EE3168F3AFB94ABFC8 /* Pods-MJAiSearchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchDemo.release.xcconfig"; path = "Target Support Files/Pods-MJAiSearchDemo/Pods-MJAiSearchDemo.release.xcconfig"; sourceTree = "<group>"; };
-		DAB1DBC96CE096A506C418B1 /* Pods_MJAiSearchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJAiSearchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A209E98B4DAAABD4D23066AD /* Pods_MJAiSearchDemo.framework in Frameworks */,
+				A6470B3546980DC3C71E5083 /* Pods_MJAiSearchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 		C58B8D564DDC2C1E8D4B8FC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAB1DBC96CE096A506C418B1 /* Pods_MJAiSearchDemo.framework */,
+				8701DA3D2BA310A3254220F8 /* Pods_MJAiSearchDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,8 +116,8 @@
 				217BEA8A219091C300622C68 /* Sources */,
 				217BEA8B219091C300622C68 /* Frameworks */,
 				217BEA8C219091C300622C68 /* Resources */,
-				67A75949BD6FEAA3392F46A0 /* [CP] Embed Pods Frameworks */,
 				CCF983F3EE474DF1E65EAD9B /* [CP] Copy Pods Resources */,
+				1D4FE795365C0EF16800AD9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,7 +174,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67A75949BD6FEAA3392F46A0 /* [CP] Embed Pods Frameworks */ = {
+		1D4FE795365C0EF16800AD9E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,13 +183,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MJAiSearchDemo/Pods-MJAiSearchDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${PODS_ROOT}/MJAiSearchSDK/MJDataLib.framework",
-				"${PODS_ROOT}/MJAiSearchSDK/MJVinParseLib.framework",
-				"${PODS_ROOT}/MJAiSearchSDK/MJAreaSearchPartLib.framework",
-				"${PODS_ROOT}/MJAiSearchSDK/MJSearchPartLib.framework",
-				"${PODS_ROOT}/MJAiSearchSDK/MJSearchEPCPartLib.framework",
-				"${PODS_ROOT}/MJAiSearchSDK/MJOrderServiceLib.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
@@ -197,13 +190,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJDataLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJVinParseLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJAreaSearchPartLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJSearchPartLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJSearchEPCPartLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJOrderServiceLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
