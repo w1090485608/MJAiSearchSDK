@@ -101,8 +101,4 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
                        completion:(_Nullable ServiceResponseBlock)completion;
 
 
-/**
- 初始化讯飞能力库
- */
-+ (void) setupIfly;
 @end
