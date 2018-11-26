@@ -36,6 +36,6 @@ s.resource = 'MJResources.bundle'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
 
-s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework','MJOrderServiceLib.framework'
+s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework','MJOrderServiceLib.framework','iflyMSC.framework'
 s.libraries = 'stdc++'
 end
