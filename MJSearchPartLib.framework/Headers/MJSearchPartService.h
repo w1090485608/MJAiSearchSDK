@@ -100,4 +100,9 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
 + (void)requestEpcImageWithPart:(nonnull MJPart*)part
                        completion:(_Nullable ServiceResponseBlock)completion;
 
+
+/**
+ 初始化讯飞能力库
+ */
++ (void) setupIfly;
 @end

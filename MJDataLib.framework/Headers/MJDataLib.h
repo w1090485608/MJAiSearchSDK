@@ -6,8 +6,6 @@
 //  Copyright © 2018年 袁兴杨. All rights reserved.
 //
 
-//版本：1.2.0
-
 
 #import <UIKit/UIKit.h>
 

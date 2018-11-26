@@ -91,6 +91,16 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
  */
 @property (nonatomic , strong) UIImage* mpvChassisImage;
 
+
+/**
+ 圈选页面初始化
+ 
+ @param frame 在您VC中的位置
+ @return instancetype
+ */
+- (instancetype)initWithCanvasFrame:(CGRect)frame;
+
+
 /**
  圈选模式选择
  
@@ -98,5 +108,14 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
                      MJDrawModeChassis  //底盘件
  */
 - (void)switchDrawSearchModeWithMode:(MJDrawMode)mode;
+
+
+/**
+ 设置圈选的画圈颜色
+
+ @param color 设置画圈的线条颜色
+ */
+- (void)setLineColor:(UIColor*)color;
+
 
 @end
