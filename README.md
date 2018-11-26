@@ -138,9 +138,10 @@ ServiceResponseBlock)completion;
 #### 圈选配件服务使用方法
 
 ``` objectivec
- MJDrawCircleSearchPartController* draw = [[MJDrawCircleSearchPartController alloc]init];
+ MJDrawCircleSearchPartController* draw = [[MJDrawCircleSearchPartController alloc]initWithCanvasFrame:CGRectMake(0, 94, 240, 400)];
 draw.delegate = self;
-[self addChildViewController:draw]; [self.view addSubview:draw.view];
+[self addChildViewController:draw]; 
+[self.view addSubview:draw.view];
 [draw didMoveToParentViewController:self];
 ```
 上面方法将MJDrawCircleSearchPartController中的view添加到您自己的viewcontroller中，方便使用，在添加代理之后，圈选得到的配件会在代理方法中返回，代理方法如下:
