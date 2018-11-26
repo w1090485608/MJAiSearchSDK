@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJAiSearchSDK'
-  s.version          = '1.2.1'
+  s.version          = '1.2.2'
   s.summary          = '明觉爱查询SDK'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,6 @@ s.resource = 'MJResources.bundle'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
 
-s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework','MJOrderServiceLib.framework','iflyMSC.framework'
+s.ios.vendored_frameworks = 'MJDataLib.framework','MJVinParseLib.framework','MJAreaSearchPartLib.framework','MJSearchPartLib.framework','MJSearchEPCPartLib.framework','MJOrderServiceLib.framework'
 s.libraries = 'stdc++'
 end

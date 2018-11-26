@@ -93,6 +93,12 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
 
 
 /**
+ 自定义bundle的位置，用于解决组件化导致bundle位置错误的问题
+ */
+@property (nonatomic, strong) NSBundle* resourceBundle;
+
+
+/**
  圈选页面初始化
  
  @param frame 在您VC中的位置
