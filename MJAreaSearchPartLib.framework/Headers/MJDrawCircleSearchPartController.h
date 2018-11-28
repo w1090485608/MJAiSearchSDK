@@ -26,6 +26,13 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
  */
 - (void)canvasCircleSelectedPartsCompletion:(NSArray<MJPart *> *)parts;
 
+
+/**
+ 圈选区域警示代理   提示用户圈选区域太小或者未圈到车体区域
+ 
+ */
+- (void)canvasDrawOutSide;
+
 /**
  圈选之后开始请求
  */
