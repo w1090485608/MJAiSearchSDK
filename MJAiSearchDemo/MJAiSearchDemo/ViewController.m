@@ -16,7 +16,7 @@
 #import <MJSearchPartLib/MJSearchPartLib.h>
 #import <Masonry/Masonry.h>
 #import "DrawCircleController.h"
-
+#import "AFNetworking.h"
 @interface ViewController ()<MJCanvasCircleSelectedPartProtocol>
 
 @property (nonatomic, strong) UITextField *vinField;
@@ -47,7 +47,14 @@
         
     }];
     
-    
+    AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
+    [manager GET:@"https://www.baidu.com" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
     [self configUI];
     
 }
