@@ -25,6 +25,12 @@ end
 ## 教程
 ---
 
+## V1.2.3 在圈选区域偏小或者没有圈到车体时添加代理，修复其他bug
+
+## V1.2.1 可以自定义圈选线条颜色，优化圈选页面
+
+## V1.2.0 移除对Masonry的依赖，进一步缩小SDK体积，修复圈选bug
+
 ## V1.1.9 移除依赖 更容易集成
 
 ## V1.1.8 修复bug
@@ -135,9 +141,10 @@ ServiceResponseBlock)completion;
 #### 圈选配件服务使用方法
 
 ``` objectivec
- MJDrawCircleSearchPartController* draw = [[MJDrawCircleSearchPartController alloc]init];
+ MJDrawCircleSearchPartController* draw = [[MJDrawCircleSearchPartController alloc]initWithCanvasFrame:CGRectMake(0, 94, 240, 400)];
 draw.delegate = self;
-[self addChildViewController:draw]; [self.view addSubview:draw.view];
+[self addChildViewController:draw]; 
+[self.view addSubview:draw.view];
 [draw didMoveToParentViewController:self];
 ```
 上面方法将MJDrawCircleSearchPartController中的view添加到您自己的viewcontroller中，方便使用，在添加代理之后，圈选得到的配件会在代理方法中返回，代理方法如下:

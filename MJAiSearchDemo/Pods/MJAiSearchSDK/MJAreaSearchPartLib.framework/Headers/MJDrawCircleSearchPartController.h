@@ -26,6 +26,13 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
  */
 - (void)canvasCircleSelectedPartsCompletion:(NSArray<MJPart *> *)parts;
 
+
+/**
+ 圈选区域警示代理   提示用户圈选区域太小或者未圈到车体区域
+ 
+ */
+- (void)canvasDrawOutSide;
+
 /**
  圈选之后开始请求
  */
@@ -91,6 +98,22 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
  */
 @property (nonatomic , strong) UIImage* mpvChassisImage;
 
+
+/**
+ 自定义bundle的位置，用于解决组件化导致bundle位置错误的问题
+ */
+@property (nonatomic, strong) NSBundle* resourceBundle;
+
+
+/**
+ 圈选页面初始化
+ 
+ @param frame 在您VC中的位置
+ @return instancetype
+ */
+- (instancetype)initWithCanvasFrame:(CGRect)frame;
+
+
 /**
  圈选模式选择
  
@@ -98,5 +121,14 @@ typedef NS_ENUM(NSInteger, MJDrawMode) {
                      MJDrawModeChassis  //底盘件
  */
 - (void)switchDrawSearchModeWithMode:(MJDrawMode)mode;
+
+
+/**
+ 设置圈选的画圈颜色
+
+ @param color 设置画圈的线条颜色
+ */
+- (void)setLineColor:(UIColor*)color;
+
 
 @end

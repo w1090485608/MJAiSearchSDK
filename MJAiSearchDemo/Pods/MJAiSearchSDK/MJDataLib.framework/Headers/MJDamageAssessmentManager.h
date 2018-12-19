@@ -21,7 +21,7 @@
 /**
  存放VIN定型后的数据
  */
-@property (nonatomic , strong) MJVehicle* vehicle;
+@property (nonatomic , strong ) MJVehicle* vehicle;
 
 
 /**
@@ -54,6 +54,14 @@
 清空SDK内部数据
  */
 - (void)clearSDKsData;
+
+
+/**
+ 获取SDK版本号
+
+ @return 版本号 eg:1.1.0
+ */
+- (NSString*)version;
 
 @end
 

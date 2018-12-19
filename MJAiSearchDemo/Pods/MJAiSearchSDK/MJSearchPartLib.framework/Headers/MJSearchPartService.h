@@ -100,4 +100,5 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
 + (void)requestEpcImageWithPart:(nonnull MJPart*)part
                        completion:(_Nullable ServiceResponseBlock)completion;
 
+
 @end

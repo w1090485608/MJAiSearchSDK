@@ -41,10 +41,9 @@
 }
 
 - (void)drawCircleController {
-    MJDrawCircleSearchPartController* draw = [[MJDrawCircleSearchPartController alloc]init];
+    MJDrawCircleSearchPartController* draw = [[MJDrawCircleSearchPartController alloc]initWithCanvasFrame:CGRectMake(0,64, self.view.bounds.size.width, self.view.bounds.size.height-64)];
     draw.delegate = self;
     [self addChildViewController:draw];
-    draw.view.frame = CGRectMake(0,64, self.view.bounds.size.width, self.view.bounds.size.height-64);
     [self.view addSubview:draw.view];
     [draw didMoveToParentViewController:self];
 }
