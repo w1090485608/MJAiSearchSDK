@@ -216,14 +216,14 @@
 			<key>x</key>
 			<integer>1</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>bottomRight</key>
 		<dict>
 			<key>x</key>
 			<integer>4</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -234,14 +234,14 @@
 			<key>x</key>
 			<integer>1</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>topRight</key>
 		<dict>
 			<key>x</key>
 			<integer>4</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>bottomLeft</key>
 		<dict>
@@ -266,14 +266,14 @@
 			<key>x</key>
 			<integer>4</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>topRight</key>
 		<dict>
 			<key>x</key>
 			<integer>9</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>bottomLeft</key>
 		<dict>
@@ -298,14 +298,14 @@
 			<key>x</key>
 			<integer>9</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>topRight</key>
 		<dict>
 			<key>x</key>
 			<integer>12</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>bottomLeft</key>
 		<dict>
@@ -344,14 +344,14 @@
 			<key>x</key>
 			<integer>9</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>bottomRight</key>
 		<dict>
 			<key>x</key>
 			<integer>12</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -664,14 +664,14 @@
 			<key>x</key>
 			<integer>4</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>bottomRight</key>
 		<dict>
 			<key>x</key>
 			<integer>9</integer>
 			<key>y</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 </array>

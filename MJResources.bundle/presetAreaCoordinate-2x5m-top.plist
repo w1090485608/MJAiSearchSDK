@@ -536,14 +536,14 @@
 			<key>x</key>
 			<integer>4</integer>
 			<key>y</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 		<key>bottomRight</key>
 		<dict>
 			<key>x</key>
 			<integer>9</integer>
 			<key>y</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -554,14 +554,14 @@
 			<key>x</key>
 			<integer>4</integer>
 			<key>y</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 		<key>topRight</key>
 		<dict>
 			<key>x</key>
 			<integer>9</integer>
 			<key>y</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 		<key>bottomLeft</key>
 		<dict>

@@ -37,7 +37,13 @@ typedef NS_ENUM(NSInteger, MJSearchQurey) {
  */
 + (void)searchPartWithKey:(nonnull NSString*)key query:(MJSearchQurey)query completion:(_Nullable ServiceResponseBlock)completion;
 
-
+/**
+一言为定语义解析
+ 
+ @param key 需要搜索的关键字 eg:换大灯
+ @param completion 搜索到的配件列表-带有工项
+ */
++ (void)partAnalysisWithKey:(nonnull NSString*)key completion:(_Nullable ServiceResponseBlock)completion;
 
 /**
  通过OE反查配件

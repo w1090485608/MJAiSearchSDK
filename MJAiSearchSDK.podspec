@@ -23,7 +23,7 @@ TODO: 移除圈选页面的切换车体按钮和文字.
 
   s.homepage         = 'https://github.com/w1090485608/MJAiSearchSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  #s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '袁兴杨' => 'xingyang.yuan@dataenlighten.com' }
   s.source           = { :git => 'https://github.com/w1090485608/MJAiSearchSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'

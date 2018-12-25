@@ -22,8 +22,9 @@ end
 ```
 如果搜索不到，请运行``` pod repo update --verbose ```更新cocoapods仓库。
 
-## 教程
+## 更新描述
 ---
+## V1.2.8 新增一言为定功能，便于在无vin的情况下快速将江湖名转换为明觉标准名
 
 ## V1.2.3 在圈选区域偏小或者没有圈到车体时添加代理，修复其他bug
 
@@ -48,6 +49,9 @@ end
 
 ## V1.1.4 更新内容
 移除圈选页面的切换车体按钮和文字label
+
+## 教程
+---
 
 ## SDK简述
 本SDK开发旨在提供方便快捷地获取汽车配件信息，通过VIN码或汽车品牌配置信息进行车辆定型后即可使用圈选或者配件名、OE等形式获取配件信息。 
@@ -238,6 +242,14 @@ completion:(_Nullable ServiceResponseBlock)completion;
 ``` objectivec
 + (void)requestEpcImageWithPart:(nonnull MJPart*)part
                        completion:(_Nullable ServiceResponseBlock)completion;
+```
+----------
+
+#### 6.一言为定语义解析功能
+根据传入的关键字key进行语义解析，返回明觉标准名，以及维修工项
+
+``` objectivec
++ (void)partAnalysisWithKey:(nonnull NSString*)key completion:(_Nullable ServiceResponseBlock)completion;
 ```
 ----------
 
