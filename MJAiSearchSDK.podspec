@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJAiSearchSDK'
-  s.version          = '1.2.7'
+  s.version          = '1.2.9'
   s.summary          = '明觉爱查询SDK'
 
 # This description is used to generate tags and improve search results.
