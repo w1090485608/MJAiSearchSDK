@@ -18,6 +18,9 @@
 		217BEA9B219091C400622C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217BEA9A219091C400622C68 /* Assets.xcassets */; };
 		217BEA9E219091C400622C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217BEA9C219091C400622C68 /* LaunchScreen.storyboard */; };
 		217BEAA1219091C400622C68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BEAA0219091C400622C68 /* main.m */; };
+		21F0F9E9224A0E5900F0CD9F /* mj_license.lic in Resources */ = {isa = PBXBuildFile; fileRef = 21F0F9E8224A0E5800F0CD9F /* mj_license.lic */; };
+		21F0F9EB224A0ECD00F0CD9F /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F0F9EA224A0ECD00F0CD9F /* libc++abi.tbd */; };
+		21F0F9ED224A0EE400F0CD9F /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F0F9EC224A0EE400F0CD9F /* libc.tbd */; };
 		274001A3219519DD000343DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274001A1219519DD000343DB /* ViewController.m */; };
 		274C373E2194408700F81469 /* EPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C37362194408600F81469 /* EPCViewController.m */; };
 		274C37412194408700F81469 /* DrawCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C373A2194408700F81469 /* DrawCircleController.m */; };
@@ -47,6 +50,9 @@
 		217BEA9D219091C400622C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		217BEA9F219091C400622C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		217BEAA0219091C400622C68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21F0F9E8224A0E5800F0CD9F /* mj_license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mj_license.lic; sourceTree = "<group>"; };
+		21F0F9EA224A0ECD00F0CD9F /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		21F0F9EC224A0EE400F0CD9F /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		274001A1219519DD000343DB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		274001A2219519DD000343DB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		274C37362194408600F81469 /* EPCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCViewController.m; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F0F9ED224A0EE400F0CD9F /* libc.tbd in Frameworks */,
+				21F0F9EB224A0ECD00F0CD9F /* libc++abi.tbd in Frameworks */,
 				A6470B3546980DC3C71E5083 /* Pods_MJAiSearchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +120,7 @@
 		217BEA90219091C300622C68 /* MJAiSearchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				21F0F9E8224A0E5800F0CD9F /* mj_license.lic */,
 				217763D321CA192E004A5419 /* AFNetworking */,
 				274001A2219519DD000343DB /* ViewController.h */,
 				274001A1219519DD000343DB /* ViewController.m */,
@@ -142,6 +151,8 @@
 		C58B8D564DDC2C1E8D4B8FC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21F0F9EC224A0EE400F0CD9F /* libc.tbd */,
+				21F0F9EA224A0ECD00F0CD9F /* libc++abi.tbd */,
 				8701DA3D2BA310A3254220F8 /* Pods_MJAiSearchDemo.framework */,
 			);
 			name = Frameworks;
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				217BEA9E219091C400622C68 /* LaunchScreen.storyboard in Resources */,
+				21F0F9E9224A0E5900F0CD9F /* mj_license.lic in Resources */,
 				217BEA9B219091C400622C68 /* Assets.xcassets in Resources */,
 				217BEA99219091C300622C68 /* Main.storyboard in Resources */,
 			);
@@ -453,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maocong.business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maocong.business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

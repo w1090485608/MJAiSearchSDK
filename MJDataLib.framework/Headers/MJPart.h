@@ -14,6 +14,7 @@
 
 @property (nonatomic,copy) NSString *presetAreaID;
 @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *srcPartName;
 @property (nonatomic,copy) NSString *priority;
 @property (nonatomic,copy) NSString *threeCoordinate;
 
